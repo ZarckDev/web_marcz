@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Poppins:wght@200;400;500&display=swap');
+
+
+*, 
+*::before, 
+*::after  {
+    box-sizing: border-box; /* does not affect the width when setting padding or margin */
+}
+
+:root{ /* default scope */
+    --main-color:#1C2431;
+    --secondary-color: #3857BA;
+    --secondary-darker-color: #425574;
+    --details-color: #CBAB60;
+    --gray-color: #b9b9b9;
+    --text-color: #fff;
+}
+
+html {
+    font-size: 62.5%; /* easy to calculate em (10px instead of 16px) */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    overflow: hidden; /* no scrollbars */
+    background-color: var(--main-color);
+    color:var(--text-color);
+    font-size: 1.6em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: 0;
+}
+button:focus {
+    outline: none;
+}
+
+h1,h2,h3 {
+    font-family: 'Quantico', sans-serif;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 2.3em;
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+/* header */
+.container {
+    margin: 1rem 3rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+nav button i {
+    font-size: 2.5em;
+    color: var(--text-color);
+}
+
+/* main */
+main {
+    position: relative;
+}
+
+.intro {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-content: space-around;
+    position: relative;
+}
+
+.intro_image {
+    width: 100vw;
+}
+
+.intro p {
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
+main svg {
+    position: absolute;
+    top: 65vh;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    width: 280px;
+    height: auto;
+}
+
+main svg #led-color,
+main svg:visited #led-color {
+    fill: #959595;
+    transition: fill 0.4s ease-in-out;
+}
+
+main svg:hover #led-color,
+main svg:active #led-color {
+    fill: #50AB66;
+}
