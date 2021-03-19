@@ -71,11 +71,20 @@ h3 {
 }
 
 h4 {
+    font-size: 1.1em;
+    font-weight: 500;
     margin-bottom: 3rem;
 }
 
 p{
     font-weight: 200;
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    background: none;
+    outline: none;
 }
 
 
@@ -84,6 +93,7 @@ p{
     font-weight: 500;
     margin-bottom: 10rem;
     text-align: center;
+    font-size: 1.6rem;
 }
 
 .container {
@@ -95,6 +105,21 @@ section {
     padding: 6rem 0;
 }
 
+.btn_info {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: .5rem;
+    line-height: 2.8rem;
+    padding: .8rem 2rem;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    box-shadow: 0 0.8rem 0.8rem -0.5rem rgb(73, 93, 207 , 0.2);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn_info:hover {
+    background-color: transparent;
+}
 
 /* header */
 header{
@@ -176,6 +201,9 @@ section.features article {
     flex-direction: column;
     place-items: center;
     max-width: 80rem;
+    border-radius: 15px;
+    /* box-shadow: 0 0 10px rgb(0, 0, 0, 0.4); */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.445);
 }
 
 .features_circleimg{
@@ -190,7 +218,7 @@ section.features article {
 }
 
 .features-1 {
-    background-image: url('assets/schematics.png');
+    background-image: url('assets/tech_pcb.jpg');
 }
 
 .features-2 {
@@ -222,7 +250,7 @@ ul.tags{
 ul.tags li{
     padding: 2px 10px;
     background-color: #3857BA;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     font-size: 1.4rem;
 }
 
@@ -309,12 +337,12 @@ ul.tags li{
     border-bottom-right-radius: 20rem;
 }
 
-.more-services {
+.more-services__selectors {
     margin: 4rem auto 7rem;
     text-align: center;
 }
 
-.more-services li {
+.more-services__selectors li {
     color: var(--gray-color);
     line-height: 1.7rem;
     letter-spacing: 0.5px;
@@ -323,22 +351,22 @@ ul.tags li{
     border-top: 1px solid rgba(136, 136, 136, 0.69);
     transition: color 0.3s ease-in-out;
 }
-.more-services li:last-of-type {
+.more-services__selectors li:last-of-type {
     border-bottom: 1px solid rgba(136, 136, 136, 0.69);
 }
 
-.more-services li:hover {
+.more-services__selectors li:hover {
     color: var(--secondary-color);
 }
 
-.more-services li.active-service {
+.more-services__selectors li.active-service {
     color:var(--text-color);
     position: relative;
 }
-.more-services li.active-service::after {
+.more-services__selectors li.active-service::after {
     content: '';
     position: absolute;
-    height: 0.5rem;
+    height: 0.4rem;
     width: 14rem;
     bottom: 0;
     left: 50%;
@@ -350,14 +378,14 @@ ul.tags li{
 
 .more-services__content {
     text-align: center;
-    animation: fadeIn 0.3s;
+    animation: fadeIn 0.5s;
 }
 
-.more-services_image {
+.more-services__image {
     max-width: 55rem;
-    margin: 0 auto 7rem;
+    margin: 0 auto 3rem;
 }
-.more-services_image img {
+.more-services__image img {
     width: 100%;
 }
 
@@ -365,12 +393,21 @@ ul.tags li{
     animation: fadeOut .5s;
 }
 
-  
+.more-services__details {
+    margin-bottom: 5rem;
+}
 
 
 /* footer */
 footer {
-    background-color: var(--secondary-color);
+    background-color: hsl(216, 53%, 9%);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.copyright {
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 
@@ -435,6 +472,9 @@ footer {
     .intro_image {
         max-width: 100%;
         order:1;
+    }
+    .intro_text .subtitle{
+        text-align:left;
     }
 
     /* Technologies */
