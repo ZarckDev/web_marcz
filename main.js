@@ -42,7 +42,7 @@ const more_description = [{
   link: 'https://bit.ly/3tFQLr6'
 },{
 	head: 'Impression 3D',
-	text: 'Grâce à des outils de CAO et à une imprimante 3D, il est possible de compléter le prototypage d\'un projet dans le but de pouvoir y intégrer directement la ou les cartes électronique.',
+	text: 'Grâce à des outils de CAO et à une imprimante 3D, il est possible de compléter le prototypage d\'un projet dans le but de pouvoir y intégrer directement la ou les cartes électronique. Matières PLA, PETG, TPU, ABS.',
   img: 'assets/more/more_3d_modeling.svg',
   link: ''
 },{

@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Font awesome when needed -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" />
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+    <link href="assets/favicon_io/favicon.ico" rel="icon" type="image/x-icon">
+
     <link rel="stylesheet" href="style.css">
 
     <title>Marc Z. -- Ingénieur polyvalent</title>
+    <meta name="description"
+        content="Accompagnement technologique sur mesure. Conception électronique, réalisation de sites et application web, développement logiciel.">
 </head>
 
 <body>
@@ -25,25 +26,27 @@
                     <li><a class="menu_link" href="#features">Domaines d'expertise</a></li>
                     <li><a class="menu_link" href="#technologies">Technologies</a></li>
                     <li><a class="menu_link" href="#more">Autres compétences</a></li>
-                    <li><a class="menu_link" href="">Contact</a></li>
                 </ul>
                 
                 <div id="collapse">
                     <button class="nav-btn open-btn">
-                        <i class="fas fa-bars"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                          </svg>
                     </button>
                     <div class="nav nav-blue">
                         <div class="nav nav-dark">
                             
                                 <button class="nav-btn close-btn">
-                                    <i class="fas fa-times"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                      </svg>
                                 </button>
                                 
                                 <ul class="menu">
                                     <li><a class="menu_link" href="#features">Domaines d'expertise</a></li>
                                     <li><a class="menu_link" href="#technologies">Technologies</a></li>
                                     <li><a class="menu_link" href="#more">Autres compétences</a></li>
-                                    <li><a class="menu_link" href="">Contact</a></li>
                                 </ul>
                                     
                         </div>
@@ -54,8 +57,8 @@
             <section id="intro">
                 <img class="intro_image" src="assets/bg-home.svg" alt="circuit">
                 <div class="intro_text">
-                    <h2>Conception et Réalisation Electronique</h2>
-                    <p class="subtitle">Un accompagnement technologique à la carte. L'esprit Low-Tech au coeur du développement.</p>
+                    <h2>Accompagnement technologique sur mesure</h2>
+                    <p class="subtitle">Conception et réalisation électronique, développement web et logiciel. L'esprit Low-Tech au coeur du développement.</p>
                 </div>
             </section>
 
@@ -222,7 +225,7 @@
     <section id="more" class="more">
         <div class="container">
             <h3>Autres compétences</h3>
-            <p class="subtitle">Le but est d'avoir une vision large sur le developpement d'un produit, ainsi dans la continuité du développement d'un produit, il est possible d'avoir recours à différents besoins. Je propose ainsi de vous accompagner dans les développements suivants :</p>
+            <p class="subtitle">Dans la continuité du développement d'un produit, ou dans un besoin d'évolution de votre entreprise, il est possible d'avoir recours à différents services. Je propose ainsi de vous accompagner dans les développements suivants:</p>
            
             <div class="more-services__selectors">
                 <ul>
@@ -249,12 +252,23 @@
     <footer>
         <div class="container">
             <div class="footer-flex">
-                <h1>Marc Z.</h1>
+                <div class="footer-details">
+                    <h1>Marc Z.</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mailbox2" viewBox="0 0 16 16">
+                        <path d="M9 8.5h2.793l.853.854A.5.5 0 0 0 13 9.5h1a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.5-.5H9v1z"/>
+                        <path d="M12 3H4a4 4 0 0 0-4 4v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7a4 4 0 0 0-4-4zM8 7a3.99 3.99 0 0 0-1.354-3H12a3 3 0 0 1 3 3v6H8V7zm-3.415.157C4.42 7.087 4.218 7 4 7c-.218 0-.42.086-.585.157C3.164 7.264 3 7.334 3 7a1 1 0 0 1 2 0c0 .334-.164.264-.415.157z"/>
+                      </svg>
+                    <span>contact@hikoz.fr</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                      </svg>
+                    <span>France</span>
+                </div>
+                
                 <ul class="footer-link">
                     <li><a class="menu_link" href="#features">Domaines d'expertise</a></li>
                     <li><a class="menu_link" href="#technologies">Technologies</a></li>
                     <li><a class="menu_link" href="#more">Autres compétences</a></li>
-                    <li><a class="menu_link" href="">Contact</a></li>
                 </ul>
             </div>
             
