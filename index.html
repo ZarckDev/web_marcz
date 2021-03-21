@@ -16,18 +16,46 @@
 </head>
 
 <body>
-    <header>
+    <header class="sine-wave">
         <div class="container">
             <nav>
                 <h1>Marc Z.</h1>
-                <button><i class="fas fa-bars"></i></button>
+
+                <ul class="nav-link">
+                    <li><a class="menu_link" href="#features">Domaines d'expertise</a></li>
+                    <li><a class="menu_link" href="#technologies">Technologies</a></li>
+                    <li><a class="menu_link" href="#more">Autres compétences</a></li>
+                    <li><a class="menu_link" href="">Contact</a></li>
+                </ul>
+                
+                <div id="collapse">
+                    <button class="nav-btn open-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="nav nav-blue">
+                        <div class="nav nav-dark">
+                            
+                                <button class="nav-btn close-btn">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                                
+                                <ul class="menu">
+                                    <li><a class="menu_link" href="#features">Domaines d'expertise</a></li>
+                                    <li><a class="menu_link" href="#technologies">Technologies</a></li>
+                                    <li><a class="menu_link" href="#more">Autres compétences</a></li>
+                                    <li><a class="menu_link" href="">Contact</a></li>
+                                </ul>
+                                    
+                        </div>
+                    </div>
+                </div>
             </nav>
 
-            <section class="intro">
+            <section id="intro">
                 <img class="intro_image" src="assets/bg-home.svg" alt="circuit">
                 <div class="intro_text">
                     <h2>Conception et Réalisation Electronique</h2>
-                    <p class="subtitle">Un accompagnement technologique complet. L'esprit Low-Tech au coeur du développement.</p>
+                    <p class="subtitle">Un accompagnement technologique à la carte. L'esprit Low-Tech au coeur du développement.</p>
                 </div>
             </section>
 
@@ -55,10 +83,10 @@
         </div>
     </header>
 
-    <section class="features">
+    <section id="features">
         <div class="container">
             <h3>Domaines d'expertise</h3>
-            <p class="subtitle">Qu'il s'agisse d'un produit ou simplement d'une idée. L'esprit Low-Tech est au centre de mes développements, où l'on doit faire en sorte que la réalisation soit utile, durable et accessible</p>
+            <p class="subtitle">Qu'il s'agisse d'un produit ou simplement d'une idée. Le Low-Tech est au centre de mes développements, où l'on doit faire en sorte que la réalisation soit utile, durable et accessible</p>
             <article>
                 <div class="features_circleimg features-1"></div>
                 <div class="features_body">
@@ -76,9 +104,7 @@
                 <div class="features_circleimg features-2"></div>
                 <div class="features_body">
                     <h4>Schemas & Routage</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sequi blanditiis sint eaque a,
-                        impedit quia illo at assumenda quam aliquam? Accusantium esse repellat fugit omnis. Explicabo
-                        enim dolore temporibus.</p>
+                    <p>Une fois l'étude réalisée, on peut passer à la saisie shématique et au routage de notre carte. Le respect des règles de routage avec le dimensionnement des pistes et la gestion des impédances est primordiale.</p>
                 </div>
                 <ul class="tags">
                     <li>KiCad</li>
@@ -105,7 +131,7 @@
                 </div>
                 <ul class="tags">
                     <li>C</li>
-                    <li>FreeRTOS Real-Time OS</li>
+                    <li>Real-Time OS</li>
                     <li>Node.js</li>
                     <li>Embedded Javascript</li>
                 </ul>
@@ -113,10 +139,10 @@
         </div>
     </section>
 
-    <section class="technologies">
+    <section id="technologies">
         <div class="container">
             <h3>Technologies</h3>
-            <p class="subtitle">Les platformes sont souvent les solutions à faible coût qui contiennent déjà un certain nombre de technologies embarguées. Elle permettent souvent un prototypage rapide et efficace.</p>
+            <p class="subtitle">Les platformes sont souvent les solutions accessibles à faible coût qui contiennent déjà un certain nombre de technologies embarquées. Elle permettent souvent un prototypage rapide et efficace.</p>
             <div class="technologies-cards">
                 <div class="technologies-card">
                     <div class="technologies-card_icon">
@@ -193,10 +219,10 @@
 
     </section>
 
-    <section class="more">
+    <section id="more" class="more">
         <div class="container">
-            <h3>Autres services</h3>
-            <p class="subtitle">Le but est d'avoir une vision large sur le developpement d'un produit, ainsi dans la continuité du développement d'un produit, il est possible d'avoir recours à différents besoins. Je propose ainsi mes services sur les potentiels besoins suivants: </p>
+            <h3>Autres compétences</h3>
+            <p class="subtitle">Le but est d'avoir une vision large sur le developpement d'un produit, ainsi dans la continuité du développement d'un produit, il est possible d'avoir recours à différents besoins. Je propose ainsi de vous accompagner dans les développements suivants:</p>
            
             <div class="more-services__selectors">
                 <ul>
@@ -210,8 +236,8 @@
                 </div>
                 <div class="more-services__text">
                     <h4 class="more-services__heading">Ecoconception Web</h4>
-                    <p class="more-services__details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem adipisci fuga amet nostrum? Fugiat quaerat ut maiores quasi quia eius consequuntur sed dolorem, aliquam fugit sit libero molestias quae vitae!</p>
-                    <a href="" class="btn_info">En savoir plus</a>
+                    <p class="more-services__details">Pour votre entreprise, pour mettre en avant un produit, ou encore pour créer une application basée sur le web. Un site réalisé en respectant les règles d'écoconception primordiales à la limitation des données dans l'internet.</p>
+                    <a href="https://bit.ly/3tFQLr6" class="btn_info more-services__btn" target="_blank">En savoir plus</a>
                 </div>
             </div>
             
@@ -221,7 +247,16 @@
 
     <footer>
         <div class="container">
-            <h1>Marc Z.</h1>
+            <div class="footer-flex">
+                <h1>Marc Z.</h1>
+                <ul class="footer-link">
+                    <li><a class="menu_link" href="#features">Domaines d'expertise</a></li>
+                    <li><a class="menu_link" href="#technologies">Technologies</a></li>
+                    <li><a class="menu_link" href="#more">Autres compétences</a></li>
+                    <li><a class="menu_link" href="">Contact</a></li>
+                </ul>
+            </div>
+            
             <p class="copyright">© Copyrights Marc Zetek. Tous droits réservés</p>
         </div>
     </footer>

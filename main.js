@@ -1,16 +1,24 @@
 const ledButton = document.getElementById('scroll-down-btn');
-const firstSection = document.querySelector('.features');
+const firstSection = document.getElementById('features');
+/* more services */
 const moreList = document.querySelectorAll('.more-services__selectors li');
 const modeContent = document.querySelector('.more-services__content');
 const moreHeading = document.querySelector('.more-services__heading');
 const moreDesc = document.querySelector('.more-services__details');
 const moreImg = document.querySelector('.more-services__image img');
+const moreBtn = document.querySelector('.more-services__btn');
+/* nav */
+const openBtn = document.querySelector('.open-btn');
+const closeBtn = document.querySelector('.close-btn');
+const nav = document.querySelectorAll('.nav');
+const menuLink = document.querySelectorAll('.menu_link');
+
 
 
 ledButton.addEventListener('click', () => {
   firstSection.scrollIntoView({
     behavior: "smooth"
-  });;
+  })
 })
 
 
@@ -19,35 +27,76 @@ ledButton.addEventListener('click', () => {
 /* More services */
 const more_description = [{
 	head: 'Ecoconception Web',
-	text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem adipisci fuga amet nostrum? Fugiat quaerat ut maiores quasi quia eius consequuntur sed dolorem, aliquam fugit sit libero molestias quae vitae!',
-  img: 'assets/more/more_website.svg'
+	text: 'Pour votre entreprise, pour mettre en avant un produit, ou encore pour créer une application basée sur le web. Un site réalisé en respectant les règles d\'écoconception primordiales à la limitation des données dans l\'internet.',
+  img: 'assets/more/more_website.svg',
+  link: 'https://bit.ly/3tFQLr6'
 },{
 	head: 'Impression 3D',
-	text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem adipisci fuga amet nostrum? Fugiat quaerat ut maiores quasi quia eius consequuntur sed dolorem, aliquam fugit sit libero molestias quae vitae!',
-  img: 'assets/more/more_3d_modeling.svg'
+	text: 'Grâce à des outils de CAO et à une imprimante 3D, il est possible de compléter le prototypage d\'un projet dans le but de pouvoir y intégrer directement la ou les cartes électronique.',
+  img: 'assets/more/more_3d_modeling.svg',
+  link: ''
 }];
+
+// initial content
+updateContent(0);
 
 moreList.forEach((el, idx) => {
   el.addEventListener('click', () => {
-    modeContent.classList.remove('fadeout');
-
     removeActiveClasses(); // remove all active classes first
 
     el.classList.add('active-service');
 
-    const content = more_description[idx];
-    moreHeading.innerHTML = content.head;
-    moreDesc.innerHTML = content.text;
-    moreImg.setAttribute('src', content.img);
-    modeContent.classList.add('fadeout');
+    setTimeout(function() {
+      updateContent(idx);
+      
+    },300)
   })
 })
 
+/* nav */
+openBtn.addEventListener('click', () => {
+  nav.forEach((nav_el) => {
+      nav_el.classList.add('visible');
+  })
+})
+
+closeBtn.addEventListener('click', () => {
+  nav.forEach((nav_el) => {
+      nav_el.classList.remove('visible');
+  })
+})
+
+menuLink.forEach((item) => {
+  item.addEventListener('click', () => {
+    nav.forEach((nav_el) => {
+      nav_el.classList.remove('visible');
+    })
+  })
+})
+
+
+
+/* Functions */
 function removeActiveClasses () {
-  
+  modeContent.classList.remove("show");
   moreList.forEach((el) => {
       el.classList.remove('active-service');
       
   })
+}
+
+function updateContent(idx) {
+  const content = more_description[idx];
+  moreHeading.innerHTML = content.head;
+  moreDesc.innerHTML = content.text;
+  moreImg.setAttribute('src', content.img);
+  if(content.link.length > 0){
+    moreBtn.style.display = 'initial'
+    moreBtn.setAttribute('href', content.link);
+  } else {
+    //don't show button
+    moreBtn.style.display = 'none'
+  }
+  modeContent.classList.add("show");
 }
 
