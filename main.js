@@ -13,6 +13,9 @@ const closeBtn = document.querySelector('.close-btn');
 const nav = document.querySelectorAll('.nav');
 const menuLink = document.querySelectorAll('.menu_link');
 const mainNav = document.querySelector('nav');
+/* myself */
+const questions = document.querySelectorAll('.question');
+const answers = document.querySelectorAll('.answer');
 
 
 
@@ -86,6 +89,16 @@ menuLink.forEach((item) => {
     nav.forEach((nav_el) => {
       nav_el.classList.remove('visible');
     })
+  })
+})
+
+
+/* myself */
+questions.forEach((question, idx) => {
+  question.addEventListener('click', () => {
+    question.classList.toggle('show-question');
+
+    answers[idx].classList.toggle('show-answer');
   })
 })
 
