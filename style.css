@@ -142,7 +142,19 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    
+    transition: all .3s ease-in-out;
+}
+
+nav.active {
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    background-color: var(--main-color);
+    line-height: 0.4;
+    padding: 0 4rem;
+    z-index: 10;
+    box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.70);
 }
 
 .nav-btn {
@@ -288,10 +300,10 @@ nav {
     margin: 5rem 0;
     padding: 5rem;
     display: grid;
-    
     place-items: center;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    position: relative;
 }
 
 .features_circleimg{
@@ -417,10 +429,9 @@ ul.tags li{
     width: 60%;
     height: 15rem;
     left: 0;
-    top:60rem;
+    top:70rem;
     z-index:-2;
     background-color: var(--details-color);
-    opacity: 0.9;
     border-top-right-radius: 20rem;
     border-bottom-right-radius: 20rem;
 }
@@ -485,6 +496,10 @@ ul.tags li{
 
 .more-services__details {
     margin-bottom: 5rem;
+}
+
+.more-services__text {
+    margin-top: 3rem;
 }
 
 
@@ -616,7 +631,7 @@ footer {
     #more::after {
         width: 40%;
         height: 25rem;
-        
+        top: 55rem;
     }
 
     .more-services__selectors li.active-service::after {

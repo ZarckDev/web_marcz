@@ -12,6 +12,7 @@ const openBtn = document.querySelector('.open-btn');
 const closeBtn = document.querySelector('.close-btn');
 const nav = document.querySelectorAll('.nav');
 const menuLink = document.querySelectorAll('.menu_link');
+const mainNav = document.querySelector('nav');
 
 
 
@@ -22,6 +23,15 @@ ledButton.addEventListener('click', () => {
 })
 
 
+window.addEventListener('scroll', fixNav) //call function fixNav on scroll
+
+function fixNav () {
+    if(window.scrollY > (mainNav.offsetHeight + 200)){
+      mainNav.classList.add('active')
+    } else {
+      mainNav.classList.remove('active')
+    }
+}
 
 
 /* More services */
@@ -34,6 +44,11 @@ const more_description = [{
 	head: 'Impression 3D',
 	text: 'Grâce à des outils de CAO et à une imprimante 3D, il est possible de compléter le prototypage d\'un projet dans le but de pouvoir y intégrer directement la ou les cartes électronique.',
   img: 'assets/more/more_3d_modeling.svg',
+  link: ''
+},{
+	head: 'Application de bureau',
+	text: 'Multi-platformes (MacOS, Windows, Linux) grâce à Electron et aux languages du web. Permet d\'avoir une application sans installation, avec accès aux fichiers locaux et aux périphériques de l\'ordinateur.',
+  img: 'assets/more/more_desktopapp.svg',
   link: ''
 }];
 
