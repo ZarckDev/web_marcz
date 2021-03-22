@@ -29,7 +29,7 @@ ledButton.addEventListener('click', () => {
 window.addEventListener('scroll', fixNav) //call function fixNav on scroll
 
 function fixNav () {
-    if(window.scrollY > (mainNav.offsetHeight + 200)){
+    if(window.scrollY > (mainNav.offsetHeight + 300)){
       mainNav.classList.add('active')
     } else {
       mainNav.classList.remove('active')

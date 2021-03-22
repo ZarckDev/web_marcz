@@ -1,5 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Poppins:wght@200;400;500&display=swap');
+/* quantico-regular - latin */
+@font-face {
+    font-family: 'Quantico';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('assets/fonts/quantico-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/quantico-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* quantico-700 - latin */
+  @font-face {
+    font-family: 'Quantico';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('assets/fonts/quantico-v10-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/quantico-v10-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 
+  /* poppins-200 - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    src: local(''),
+         url('assets/fonts/poppins-v15-latin-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/poppins-v15-latin-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* poppins-regular - latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('assets/fonts/poppins-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/poppins-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* poppins-500 - latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('assets/fonts/poppins-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/poppins-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 
 *,
 *::before,
@@ -273,7 +317,8 @@ nav.active {
     display: grid;
     justify-content: space-evenly;
     place-items: center;
-    gap: 2.5em;
+    gap: 2.5rem;
+    padding-top: 1rem;
 }
 
 .intro_image {
@@ -441,8 +486,7 @@ ul.tags li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    column-gap: 2em;
-    row-gap: 1em;
+    gap: 1rem 2rem;
 }
 
 
@@ -569,10 +613,6 @@ ul.tags li {
     margin: 0;
 }
 
-.question_content:hover {
-    color: var(--secondary-color);
-}
-
 .question_arrow {
     width: 2rem;
     height: 2rem;
@@ -614,13 +654,13 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4em;
+    gap: 4rem;
 }
 
 .footer-details {
     display: grid;
     grid-template-columns: 2.3rem 1fr;
-    gap: 1em;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
 }
@@ -642,7 +682,7 @@ footer {
 .footer-link {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .copyright {
@@ -706,7 +746,7 @@ footer {
     /* Expertise */
     #features article {
         grid-template-columns: 1fr 2fr;
-        column-gap: 2em;
+        column-gap: 2rem;
     }
 
     #features article:nth-of-type(even) {
@@ -759,7 +799,7 @@ footer {
 
     .nav-link {
         display: flex;
-        column-gap: 2em;
+        column-gap: 2rem;
     }
 
     #more::after {
@@ -796,7 +836,7 @@ footer {
         display: grid;
         grid-auto-flow: column;
         grid-template-columns: 55rem 1fr;
-        column-gap: 2em;
+        column-gap: 2rem;
         text-align: left;
     }
 
@@ -812,7 +852,7 @@ footer {
 
     .footer-link {
         flex-direction: row;
-        gap: 2em;
+        gap: 2rem;
     }
 
     .footer-details h1 {
