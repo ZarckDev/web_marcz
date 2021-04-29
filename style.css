@@ -1,49 +1,5 @@
-/* quantico-regular - latin */
-@font-face {
-    font-family: 'Quantico';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('assets/fonts/quantico-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('assets/fonts/quantico-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* quantico-700 - latin */
-  @font-face {
-    font-family: 'Quantico';
-    font-style: normal;
-    font-weight: 700;
-    src: local(''),
-         url('assets/fonts/quantico-v10-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('assets/fonts/quantico-v10-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Quantico:wght@400;700&display=swap');
 
-  /* poppins-200 - latin */
-@font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 200;
-    src: local(''),
-         url('assets/fonts/poppins-v15-latin-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('assets/fonts/poppins-v15-latin-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* poppins-regular - latin */
-  @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('assets/fonts/poppins-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('assets/fonts/poppins-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* poppins-500 - latin */
-  @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    src: local(''),
-         url('assets/fonts/poppins-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('assets/fonts/poppins-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
 
 *,
 *::before,
@@ -163,7 +119,7 @@
     }
 
     section {
-        padding: 6rem 0 10rem;
+        padding: 6rem 0;
     }
 
     .btn_info {
@@ -490,6 +446,96 @@
         gap: 1rem 2rem;
     }
 
+    /* Languages */
+    /*=============== payment_clients_area  css =============*/
+    .languages {
+        min-height: 800px;
+        display: grid;
+        grid-template-rows: 50% 50%;
+    }
+
+    .languages_text {
+        align-self: center;
+    }
+
+    .languages_logos {
+        position: relative;
+    }
+
+    .languages_logos .languages_item {
+        border-width: 5px;
+        border-color: var(--secondary-color);
+        border-style: solid;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0px 1px 30px 0px rgba(55, 125, 162, 0.2);
+        position: absolute;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .languages_logos .languages_item img {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .languages_logos .languages_item.one {
+        width: 120px;
+        height: 120px;
+        top: 20%;
+    }
+
+    .languages_logos .languages_item.two {
+        width: 150px;
+        height: 150px;
+        top: 60%;
+        left: 10%;
+    }
+
+    .languages_logos .languages_item.three {
+        width: 128px;
+        height: 128px;
+        left: 40%;
+    }
+
+    .languages_logos .languages_item.four {
+        width: 142px;
+        height: 142px;
+        left: 80%;
+        top: 90%;
+    }
+
+    .languages_logos .languages_item.five {
+        width: 110px;
+        height: 110px;
+        left: 55%;
+        top: 55%;
+    }
+
+    .languages_logos .languages_item.six {
+        width: 100px;
+        height: 100px;
+        left: 85%;
+        top: 25%;
+    }
+
+    .languages_logos .languages_item.seven {
+        width: 80px;
+        height: 80px;
+        left: 95%;
+        top: 0px;
+        display: none;
+    }
+
+    .languages_logos .languages_item.eight {
+        width: 95px;
+        height: 95px;
+        left: 100%;
+        top:55%;
+        display: none;
+    }
+
 
     /* More services */
     #more {
@@ -789,7 +835,7 @@
         .technologies-card:nth-of-type(even) {
             justify-self: end;
         }
-
+    
     }
 
     @media(min-width: 992px) {
@@ -802,6 +848,25 @@
             display: flex;
             column-gap: 2rem;
         }
+
+        .languages {
+            min-height: 400px;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr;
+        }
+
+        .languages_text {
+            padding-right: 2rem;
+        }
+
+        .languages_logos .languages_item.seven {
+            display: block;
+        }
+    
+        .languages_logos .languages_item.eight {
+            display: block;
+        }
+    
 
         #more::after {
             width: 40%;
