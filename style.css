@@ -460,6 +460,8 @@
 
     .languages_logos {
         position: relative;
+        margin-top: 8rem;
+        width: 100%;
     }
 
     .languages_logos .languages_item {
@@ -478,12 +480,14 @@
         position: relative;
         top: 50%;
         transform: translateY(-50%);
+        overflow-x:hidden;
+        overflow-y:hidden;
     }
 
     .languages_logos .languages_item.one {
         width: 120px;
         height: 120px;
-        top: 20%;
+        top: 25%;
     }
 
     .languages_logos .languages_item.two {
@@ -500,10 +504,10 @@
     }
 
     .languages_logos .languages_item.four {
-        width: 142px;
-        height: 142px;
-        left: 80%;
-        top: 90%;
+        width: 130px;
+        height: 130px;
+        left: 50%;
+        top: 100%;
     }
 
     .languages_logos .languages_item.five {
@@ -516,7 +520,7 @@
     .languages_logos .languages_item.six {
         width: 100px;
         height: 100px;
-        left: 85%;
+        left: 72%;
         top: 25%;
     }
 
@@ -524,7 +528,7 @@
         width: 80px;
         height: 80px;
         left: 95%;
-        top: 0px;
+        top: -20px;
         display: none;
     }
 
@@ -859,6 +863,11 @@
             padding-right: 2rem;
         }
 
+        .languages_logos .languages_item.one {
+
+            top: 15%;
+        }
+
         .languages_logos .languages_item.seven {
             display: block;
         }
@@ -866,7 +875,14 @@
         .languages_logos .languages_item.eight {
             display: block;
         }
+        .languages_logos .languages_item.six {
+            left: 80%;
+        }
     
+        .languages_logos .languages_item.four {
+            left: 80%;
+            top: 90%;
+        }
 
         #more::after {
             width: 40%;
