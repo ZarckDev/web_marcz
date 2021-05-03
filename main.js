@@ -42,7 +42,7 @@ const more_description = [{
 	head: 'Création Web',
 	text: 'Pour votre entreprise, pour mettre en avant un produit, ou encore pour créer une application basée sur le web. Un site réalisé en respectant les règles d\'écoconception primordiales à la limitation des données dans l\'internet.',
   img: 'assets/more/more_website.svg',
-  link: 'https://bit.ly/3tFQLr6'
+  link: ''
 },{
 	head: 'Impression 3D',
 	text: 'Grâce à des outils de CAO et à une imprimante 3D, il est possible de compléter le prototypage d\'un projet dans le but de pouvoir y intégrer directement la ou les cartes électronique. Matières PLA, PETG, TPU.',
