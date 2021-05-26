@@ -315,14 +315,55 @@
         fill: #50AB66;
     }
 
-
-    /* features */
-    #features {
+    /* presentation */
+    #presentation {
         background: var(--secondary-darker-color);
         /* background: linear-gradient(0deg, rgba(28,36,49,1)  0%, rgba(24,31,42,1) 100%); */
         padding: 10rem 0;
     }
 
+    .presentation-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .presentation-text{
+        flex: 1;
+        margin-top: 5rem;
+    }
+
+    .presentation-img {
+        flex: 0;
+        margin-top: 5rem;
+    }
+
+    .profile-circle {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        border: 5px solid var(--secondary-color);
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .profile-img {
+        background-image: url('assets/profile_pic_300.png');
+        box-shadow:none;
+    }
+    .profile-img:hover {
+        cursor: pointer;
+        box-shadow:inset 0 0 0 2000px rgb(56, 87, 186, 0.4);
+    }
+    .profile-github {
+        width: 30px;
+    }
+
+
+    /* features */
     #features article {
         margin: 5rem 0;
         padding: 5rem;
@@ -383,6 +424,11 @@
 
 
     /* technologies */
+    #technologies {
+        background: var(--secondary-darker-color);
+        /* background: linear-gradient(0deg, rgba(28,36,49,1)  0%, rgba(24,31,42,1) 100%); */
+        padding: 10rem 0;
+    }
     .technologies-cards {
         display: grid;
         justify-items: center;
@@ -449,6 +495,8 @@
     /* Languages */
     /*=============== payment_clients_area  css =============*/
     .languages {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
         min-height: 800px;
         display: grid;
         grid-template-rows: 50% 50%;
