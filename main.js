@@ -1,5 +1,5 @@
 const ledButton = document.getElementById('scroll-down-btn');
-const firstSection = document.getElementById('features');
+const firstSection = document.getElementById('presentation');
 /* more services */
 const moreList = document.querySelectorAll('.more-services__selectors li');
 const modeContent = document.querySelector('.more-services__content');

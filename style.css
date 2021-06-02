@@ -70,7 +70,7 @@
 
     h2 {
         font-weight: 700;
-        font-size: 2.2em;
+        font-size: 1.8em;
     }
 
     h3 {
@@ -279,7 +279,7 @@
     }
 
     .intro_image {
-        width: 100vw;
+        width: 95vw;
         /* take full width on mobile */
     }
 
@@ -293,7 +293,7 @@
         width: 280px;
         height: auto;
         position: absolute;
-        top: 80vh;
+        top: 75vh;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -327,23 +327,24 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        row-gap: 3rem;
     }
 
     .presentation-text{
         flex: 1;
-        margin-top: 5rem;
     }
 
     .presentation-img {
         flex: 0;
-        margin-top: 5rem;
     }
 
     .profile-circle {
-        width: 20rem;
-        height: 20rem;
+        position: relative;
+        width: 18rem;
+        height: 18rem;
         border-radius: 50%;
         border: 5px solid var(--secondary-color);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 
         background-size: cover;
         background-position: center;
@@ -352,14 +353,24 @@
 
     .profile-img {
         background-image: url('assets/profile_pic_300.png');
-        box-shadow:none;
     }
-    .profile-img:hover {
-        cursor: pointer;
-        box-shadow:inset 0 0 0 2000px rgb(56, 87, 186, 0.4);
+    
+    .profile-img > .profile-github {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        fill:#3857BA;
     }
-    .profile-github {
-        width: 30px;
+    .shadow {
+        -webkit-filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, .5));
+        filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, .5));
+      }
+
+    .profile-img:hover > .profile-github{
+        display: block;
     }
 
 
@@ -814,6 +825,10 @@
         #myself {
             background-size: 60vh;
         }
+
+        h2 {
+            font-size: 2.2em;
+        }
     }
 
     @media(min-width: 768px) {
@@ -824,6 +839,13 @@
         .sine-wave {
             background-image: url("assets/bg-intro-desktop.svg");
         }
+
+        .presentation-content {
+            flex-direction: row;
+            column-gap: 6rem;
+        }
+
+        
 
         #intro {
             grid-auto-flow: column;
