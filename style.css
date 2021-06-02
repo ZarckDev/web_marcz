@@ -70,7 +70,7 @@
 
     h2 {
         font-weight: 700;
-        font-size: 2.2em;
+        font-size: 1.8em;
     }
 
     h3 {
@@ -279,7 +279,7 @@
     }
 
     .intro_image {
-        width: 100vw;
+        width: 95vw;
         /* take full width on mobile */
     }
 
@@ -293,7 +293,7 @@
         width: 280px;
         height: auto;
         position: absolute;
-        top: 80vh;
+        top: 75vh;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -315,14 +315,66 @@
         fill: #50AB66;
     }
 
-
-    /* features */
-    #features {
+    /* presentation */
+    #presentation {
         background: var(--secondary-darker-color);
         /* background: linear-gradient(0deg, rgba(28,36,49,1)  0%, rgba(24,31,42,1) 100%); */
         padding: 10rem 0;
     }
 
+    .presentation-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+    }
+
+    .presentation-text{
+        flex: 1;
+    }
+
+    .presentation-img {
+        flex: 0;
+    }
+
+    .profile-circle {
+        position: relative;
+        width: 18rem;
+        height: 18rem;
+        border-radius: 50%;
+        border: 5px solid var(--secondary-color);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .profile-img {
+        background-image: url('assets/profile_pic_300.png');
+    }
+    
+    .profile-img > .profile-github {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        fill:#3857BA;
+    }
+    .shadow {
+        -webkit-filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, .5));
+        filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, .5));
+      }
+
+    .profile-img:hover > .profile-github{
+        display: block;
+    }
+
+
+    /* features */
     #features article {
         margin: 5rem 0;
         padding: 5rem;
@@ -383,6 +435,11 @@
 
 
     /* technologies */
+    #technologies {
+        background: var(--secondary-darker-color);
+        /* background: linear-gradient(0deg, rgba(28,36,49,1)  0%, rgba(24,31,42,1) 100%); */
+        padding: 10rem 0;
+    }
     .technologies-cards {
         display: grid;
         justify-items: center;
@@ -449,6 +506,8 @@
     /* Languages */
     /*=============== payment_clients_area  css =============*/
     .languages {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
         min-height: 800px;
         display: grid;
         grid-template-rows: 50% 50%;
@@ -766,6 +825,10 @@
         #myself {
             background-size: 60vh;
         }
+
+        h2 {
+            font-size: 2.2em;
+        }
     }
 
     @media(min-width: 768px) {
@@ -776,6 +839,13 @@
         .sine-wave {
             background-image: url("assets/bg-intro-desktop.svg");
         }
+
+        .presentation-content {
+            flex-direction: row;
+            column-gap: 6rem;
+        }
+
+        
 
         #intro {
             grid-auto-flow: column;
